@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produto</title>
+  <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+  <main>
+    <h1>Formulário</h1>
+
+    -->
+    <form action="/enviar-formulario" method="POST">
+      <fieldset>
+        <legend>Informações do formulário</legend>
+
+   
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome:" required>
+
+        <label for="email">Email:</label>
+        
+        <input type="email" id="email" name="email" placeholder="Digite seu email:" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone:" required>
+
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto desta mensagem:" required>
+
+        <label for="mensagem">Mensagem: </label>
+      
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem:" required></textarea>
+      </fieldset>
+
+      <section class="acoes">
+        
+        <button type="submit" class="salvar">
+          Enviar Formulário
+        </button>
+        <button type="button" class="cancelar" onclick="window.location.href='/'">Cancelar</button>
+      </section>
+    </form>
+  </main>
+</body>
+</html>
